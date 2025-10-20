@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laura Stemmler</title>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="nav-placeholder"></div>
+        <p>¡Hola! Me llamo Laura Stemmler Hermida y soy recién graduada con un máster en Matemáticas por la Universidad de New South Wales, Sídney, Australia. Nací en Madrid, España, pero he tenido la oportunidad de formarme académicamente en distintos países. </p>
+        <p>Durante el Máster, me especialicé en complejidad algorítmica y métodos probabilísticos. Previamente obtuve mi grado en Matemáticas en Carnegie Mellon University, en Pittsburgh, Pensilvania (EE.UU).</p>
+        <p>Mis intereses actuales incluyen áreas de algoritmos y las matemáticas aplicadas a las finanzas. 
+        </p>
+        <p> En este sitio comparto algunos apuntes y materiales que he ido reuniendo durante mis estudios. Están en proceso de revisión y pueden contener errores, pero espero que puedan ser de ayuda a otros estudiantes. </p>
+   <script>
+  fetch("nav_es.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("nav-placeholder").innerHTML = data;
+    });
+</script>  
+    </body>
+</html>

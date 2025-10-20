@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laura Stemmler</title>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="nav-placeholder"></div>
+        <p> Hi! My name is Laura Stemmler Hermida, and I recently completed a Master's degree in Mathematics at the University of New South Wales in Sidney, Australia. I was born in Madrid, Spain, but I have had the good fortune of studying in different countries. </p>
+        <p>Durante my master's, I specialized in algorithmic complexity. Previously, I earned my Bachelor's degree in Mathematics from Carnegie Mellon University in Pittsburgh, Pennsylvania. </p>
+        <p>My current interests include algorithms and applications of mathematics in finance. 
+        </p>
+        <p> On this site, I share some of my notes and materials I've gathered throughout my studies. They are a work in progress and may contain some errors, but I hope they are helpful and interesting to other students!</p>
+    <script>
+  fetch("nav.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("nav-placeholder").innerHTML = data;
+    });
+</script> 
+    </body>
+</html>

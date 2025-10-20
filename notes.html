@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laura Stemmler</title>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="nav-placeholder"></div>
+        <p>Here are some of my notes I've taken throughout my studies. They are a work in progress and may contain some errors. Enjoy!</p>
+        <div class="pdf-grid">
+  <div class="pdf-container">
+    <embed src="./pdfs/Thesis.pdf" type="application/pdf" width="100%" height="300px" />
+    <p class="pdf-caption">Master's Thesis</p>
+  </div>
+
+  <div class="pdf-container">
+    <embed src="./pdfs/AG.pdf" type="application/pdf" width="100%" height="300px" />
+    <p class="pdf-caption">Algebraic Geometry</p>
+  </div>
+
+  <div class="pdf-container">
+    <embed src="./pdfs/Galois_Theory.pdf" type="application/pdf" width="100%" height="300px" />
+    <p class="pdf-caption">Galois Theory</p>
+  </div>
+
+    <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+    </body>
+</html>
